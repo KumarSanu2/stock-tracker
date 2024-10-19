@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Tracker</h1>
+        </header>
+
+        <div class="search-section">
+            <label for="stock-select">Select Trending Stock</label>
+            <select id="stock-select">
+                <option value="AAPL">AAPL</option>
+                <option value="GOOGL">GOOGL</option>
+                <option value="MSFT">MSFT</option>
+                <option value="NIFTY">NIFTY</option>
+                <option value="BANKNIFTY">BANKNIFTY</option>
+            </select>
+            <button id="load-stock">Load Stock</button>
+            <input type="text" id="stock-search" placeholder="Search for a stock (e.g., AAPL)">
+            <button id="search-stock">Search</button>
+        </div>
+            
+
+        <div class="stock-info">
+            <h2>Stock Information</h2>
+            <p id="stock-details">No stock selected.</p>
+        </div>
+
+        <div class="stock-graph">
+            <h2>Stock Price Graph</h2>
+            <canvas id="stock-chart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
